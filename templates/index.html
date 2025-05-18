@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>URL Shortner</title>
+        <style>
+            body {
+                font-family: 'Times New Roman', Times, serif;
+                padding: 16px;
+            }
+            input, select, button {
+                padding: 8px;
+                width: 300px;
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>URL Shortner</h2>
+        <form method="POST">
+            <input type="url" name="url" placeholder="Please Enter your URL" required><br>
+            <select name="expiry">
+                <option value="1">1 minute</option>
+                <option value="5">5 minutes</option>
+                <option value="30">30 minutes</option>
+                <option value="60">1 Hour</option>
+                <option value="1440">1 Day</option>
+            </select><br>
+            <button type="submit">Shorten</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>URL Shortner</title>
+        <style>
+            body {
+                font-family: 'Times New Roman', Times, serif;
+                padding: 16px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Shortened URL</h2>
+        <p>
+            <strong>Generated Short URL:</strong>
+            <a href="{{short_url}}">{{short_url}}</a>
+        </p>
+        <p>
+            Expires in {{expiry}} minutes
+        </p>
+        <a href="{{url_for('index')}}">Shorten another</a>
+    </body>
+</html>
